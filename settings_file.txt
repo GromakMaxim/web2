@@ -1,0 +1,7 @@
+server_port:25999;
+threads:64;
+valid_paths: /index.html;
+valid_file_extension: .html,.css,.jpg,.svg,.ttf,.woff,.woff2;
+
+
+	

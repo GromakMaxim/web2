@@ -1,0 +1,102 @@
+.themes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px
+}
+
+.themes-title {
+    display: flex;
+    font-family: OpenSans-Bold;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.8vw;
+}
+
+.themes-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 65px;
+    height: 3px;
+    background-color: #e1d9bd;
+    right: 0;
+    display: block;
+    margin: -15px auto
+}
+
+.themes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.theme {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0px 15px 0px;
+}
+
+.theme-link {
+    color: #000;
+    font-family: OpenSans-Bold;
+    text-transform: capitalize;
+}
+
+.counter {
+    font-family: OpenSans-Bold;
+    color: #b59f5b;
+    vertical-align: super;
+}
+
+.theme-link:visited,
+.theme-link:active {
+    color: #000
+}
+
+@media screen and (min-width:1200px) {
+    .themes-title {
+        font-size: 0.8vw;
+    }
+    .theme-link {
+        font-size: 0.9vw;
+    }
+    .counter {
+        font-size: 0.8vw;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:1199px) {
+    .themes-title {
+        font-size: 1.7vw;
+    }
+    .theme-link {
+        font-size: 1.6vw;
+    }
+    .counter {
+        font-size: 1.2vw;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .themes {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .themes-title {
+        font-size: 4vw;
+    }
+    .theme-link {
+        font-size: 4.5vw;
+    }
+    .counter {
+        font-family: OpenSans-Bold;
+        color: #b59f5b;
+        vertical-align: super;
+        font-size: 4vw;
+    }
+}
